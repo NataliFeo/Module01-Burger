@@ -7,6 +7,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -35,6 +38,9 @@ body {
     color: #443737;
     text-decoration: none;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a::after{
     content: '';
     width: 100%;
@@ -53,6 +59,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item {
     position: relative;
@@ -83,6 +90,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: o;
@@ -90,7 +98,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -98,10 +106,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -109,8 +124,8 @@ body {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
@@ -119,4 +134,52 @@ body {
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner {
+    margin-bottom: 100px;
+}
+.banner-box {
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+}
+.banner-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 76px;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+.banner-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    background: #F37335;
+    border-radius: 14px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    width: 95px;
+}
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    width: 312px;
+    margin-bottom: 35px;
+}
+.banner-box a {
+    color: #1E2F40;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
 }
