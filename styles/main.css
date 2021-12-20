@@ -353,3 +353,59 @@ header {
     line-height: 18px;
     text-transform: uppercase;
 }
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 111px;
+    padding-bottom: 106px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+.footer-item li {
+    color: #DEDEDE;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 9px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-list span {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+.footer-list li {
+    font-weight: 700;
+}
+.footer-tel ul {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #FBB731;
+    margin-top: 0;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
+}
