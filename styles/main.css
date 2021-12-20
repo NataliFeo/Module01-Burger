@@ -354,6 +354,10 @@ header {
     margin: 0 auto;
     gap: 9px;
 }
+.additionally-grid-btn:hover {
+    background: #F37335;
+    cursor: pointer;
+}
 .additionally-grid-icon {
     background-image: url(../images/menu-cart.svg);
     background-repeat: no-repeat;
