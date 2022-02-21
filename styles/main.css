@@ -318,9 +318,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 34px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    overflow: hidden;
 }
 .additionally-grid-cover {
     width: 100%;
@@ -690,10 +687,10 @@ header {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
     }
-    .additionally .container {
+    .additionally {
         overflow: hidden;
     }
-    .menu-grid .additionally-grid {
+    .additionally .additionally-grid {
         display: flex;
         width: auto;
         overflow-x: scroll;
@@ -734,6 +731,9 @@ header {
 }
 
 @media (max-width: 655px) {
+    .menu {
+        margin-bottom: 55px;
+    }
     .menu-grid {
         gap: 30px 15px;
     }
@@ -853,5 +853,12 @@ header {
     }
     .menu-header {
         gap: 20px;
+    }
+    .additionally-grid {
+        gap: 35px 10px;
+    }
+    .additionally-grid-cover, .additionally-grid-cover img {
+        width: 140px;
+        height: 180px;
     }
 }
