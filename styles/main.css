@@ -547,18 +547,18 @@ header {
 }
 .visual-bg {
     /*width: 432px;*/
-    width: calc(180px + 252 * ((100vw - 765px)/(1920-765)));
+    width: calc(180px + 252 * ((100vw - 765px)/(1210-765)));
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
     /*width: 652px;*/
-    width: calc(353px + 299 * ((100vw - 765px)/(1920-765)));
+    width: calc(353px + 299 * ((100vw - 765px)/(1210-765)));
     position: absolute;
     /*right: -101px;*/
-    right: calc(-13px - 88 * ((100vw - 765px)/(1920-765)));
+    right: calc(-13px - 88 * ((100vw - 765px)/(1210-765)));
     /*bottom: 29px;*/
-    bottom: calc(76 - 47 * ((100vw - 765px)/(1920-765)));
+    bottom: calc(76px - 47 * ((100vw - 765px)/(1210-765)));
 }
 .promo {
     padding-top: 186px;
@@ -690,9 +690,6 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .wrapper {
-        max-width: 759px;
-    }
     .container {
         max-width: 738px;
     }
