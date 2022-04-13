@@ -481,6 +481,8 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .content {
     color: #FAF9F9;
@@ -515,6 +517,7 @@ header {
 .promo a {
     color: #1E2F40;
     background-color: #FBB731;
+    border: 1px solid #FBB731;
     border-radius: 5px;
     text-decoration: none;
     padding: 20px 45px;
@@ -523,6 +526,15 @@ header {
     font-size: 14px;
     font-weight: 700;
 }
+.content-link:hover {
+    background-color: transparent;
+    color: #FBB731;
+}
+.promo a:hover {
+    background-color: transparent;
+    color: #FBB731;
+}
+
 .visual {
     flex-grow: 1;
     display: flex;
@@ -535,9 +547,10 @@ header {
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
-    width: 829px;
+    max-width: 652px;
     position: absolute;
-    right: -168px;
+    right: -101px;
+    bottom: 29px;
 }
 .promo {
     padding-top: 186px;
@@ -651,6 +664,65 @@ header {
 
 /* Responsive */
 
+@media (max-width: 1400px) {
+    .content {
+        padding-top: ;
+    }
+    .main img {
+        width: 40vw;
+        right: -43px;
+        bottom: 100px;
+    }
+    .visual {
+    padding-right: ;
+    }
+    
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        max-width: 970px;
+    }
+    .content {
+        padding-left: ;
+    }
+    .content-title {
+        font-size: 100px;
+    }
+    .conten-text {
+        font-size: ;
+    }
+    .main img {
+        width: ;
+        right: ;
+        bottom: ;
+    }
+    .visual {
+        padding-right: ;
+    }
+}
+@media (max-width: 1150px) {
+    .content-title {
+        font-size: 80px;
+    }
+    .conten-text {
+        font-size: 14px;
+    }
+    .content {
+        
+    }
+    .main img {
+        width: ;
+        right: ;
+        bottom: ;
+    }
+    .visual-bg {
+        width: 345px;
+    }
+    .visual {
+        padding-right: 40px;
+    }
+}
 @media (min-width: 1001px) {
     .footer-list + .footer-list-tel {
         display: none;
@@ -658,6 +730,20 @@ header {
 }
 
 @media (max-width: 1000px) {
+    .content-title {
+        font-size: 86px;
+    }
+    .conten-text {
+        font-size: 14px;
+    }
+    .main img {
+        width: ;
+        right: ;
+        bottom: ;
+    }
+    .wrapper {
+        max-width: 759px;
+    }
     .container {
         max-width: 738px;
     }
@@ -717,6 +803,30 @@ header {
 }
 
 @media (max-width: 765px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .content {
+        max-width: 555px;
+        padding-top: 42px;
+    }
+    .content-title {
+        font-size: 65px;
+        line-height: 75px;
+    }
+    .conten-text {
+        font-size: ;
+    }
+
+    .visual {
+        display: none;
+    }
+    .main img {
+        width: px;
+        right: px;
+        bottom: px
+    }
     nav {
         display: none;
     }
