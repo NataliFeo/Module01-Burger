@@ -555,12 +555,12 @@ header {
 }
 .main img {
     /*width: 652px;*/
-    width: calc(353px + 299 * ((100vw - 765px)/(1210-765)));
+    width: calc(315px + 367 * ((100vw - 765px)/(1210-765)));
     position: absolute;
     /*right: -101px;*/
-    right: calc(-13px - 88 * ((100vw - 765px)/(1210-765)));
+    right: calc(39px - 126 * ((100vw - 765px)/(1210-765)));
     /*bottom: 29px;*/
-    bottom: calc(76px - 47 * ((100vw - 765px)/(1210-765)));
+    bottom: calc(128px - 47 * ((100vw - 765px)/(1210-765)));
 }
 .promo {
     /*padding-top: 186px;*/
