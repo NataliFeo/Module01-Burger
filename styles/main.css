@@ -486,9 +486,11 @@ header {
 }
 .content {
     color: #FAF9F9;
-    flex: 0 0 580px;
-    padding-top: 170px;
-    padding-bottom: 170px;
+    flex: 0 1 580px;
+    /*padding-top: 170px;*/
+    padding-top: calc(65px + 105 * ((100vw - 320px)/(1210-320)));
+    /*padding-bottom: 170px;*/
+    padding-bottom: calc(50px + 120 * ((100vw - 320px)/(1210-320)));
 }
 .content-title {
     /*font-size: 120px;*/
@@ -561,8 +563,10 @@ header {
     bottom: calc(76px - 47 * ((100vw - 765px)/(1210-765)));
 }
 .promo {
-    padding-top: 186px;
-    padding-bottom: 140px;
+    /*padding-top: 186px;*/
+    padding-top: calc(73px + 113 * ((100vw - 320px)/(1530-320)));
+    /*padding-bottom: 140px;*/
+    padding-bottom: calc(73px + 67 * ((100vw - 320px)/(1530-320)));
 }
 .promo-left,
 .promo-right {
@@ -575,11 +579,19 @@ header {
 }
 .promo-left {
     background-image: url(../images/promo-left.png);
-    padding: 116px 50px;
+    /*padding: 116px 50px;*/
+    padding-top: calc(60px + 56 * ((100vw - 320px)/(1210-320)));
+    padding-bottom: calc(60px + 56 * ((100vw - 320px)/(1210-320)));
+    padding-right: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
+    padding-left: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
 }
 .promo-right {
     background-image: url(../images/promo-right.png);
-    padding: 102px 50px;
+    /*padding: 102px 50px;*/
+    padding-top: calc(60px + 42 * ((100vw - 320px)/(1210-320)));
+    padding-bottom: calc(60px + 42 * ((100vw - 320px)/(1210-320)));
+    padding-right: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
+    padding-left: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
 }
 .sale {
     font-size: 14px;
@@ -675,12 +687,12 @@ header {
 
 @media (max-width: 1300px) {
     .content {
-        flex: 0 0 480px;
+        flex: 0 1 410px;
     }
 }
 @media (max-width: 1150px) {
     .visual {
-        padding-right: 40px;
+        padding-right: 51px;
     }
 }
 @media (min-width: 1001px) {
@@ -818,13 +830,16 @@ header {
     }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 620px) {
     .wrapper {
         flex-direction: column;
     }
     .promo-left {
         margin-bottom: 20px;
     }
+}
+
+@media (max-width: 567px) {
     .breadcrumbs a {
         font-size: 14px;
     }
@@ -893,6 +908,9 @@ header {
     }
     .menu-header {
         gap: 20px;
+    }
+    .menu-grid-title {
+        font-size: 17px;
     }
     .additionally-grid {
         gap: 35px 10px;
