@@ -488,9 +488,9 @@ header {
     color: #FAF9F9;
     flex: 0 1 580px;
     /*padding-top: 170px;*/
-    padding-top: calc(65px + 105 * ((100vw - 320px)/(1210-320)));
+    padding-top: calc(65px + 105 * ((100vw - 320px) / (1920 - 320)));
     /*padding-bottom: 170px;*/
-    padding-bottom: calc(50px + 120 * ((100vw - 320px)/(1210-320)));
+    padding-bottom: calc(50px + 120 * ((100vw - 320px) / (1920 - 320)));
 }
 .content-title {
     /*font-size: 120px;*/
@@ -549,24 +549,24 @@ header {
 }
 .visual-bg {
     /*width: 432px;*/
-    width: calc(180px + 252 * ((100vw - 765px)/(1210-765)));
+    width: calc(180px + 252 * ((100vw - 320px) / (1920 - 320)));
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
     /*width: 652px;*/
-    width: calc(16px + 3 * ((100vw - 320px) / (1920 - 320)));
+    width: calc(270px + 367 * ((100vw - 320px) / (1920 - 320)));
     position: absolute;
     /*right: -101px;*/
-    right: calc(16px + 3 * ((100vw - 320px) / (1920 - 320)));
+    right: calc(62px - 126 * ((100vw - 320px) / (1920 - 320)));
     /*bottom: 29px;*/
-    bottom: calc(16px + 3 * ((100vw - 320px) / (1920 - 320)));
+    bottom: calc(106px - 47 * ((100vw - 320px) / (1920 - 320)));
 }
 .promo {
     /*padding-top: 186px;*/
-    padding-top: calc(73px + 113 * ((100vw - 320px)/(1530-320)));
+    padding-top: calc(73px + 113 * ((100vw - 320px) / (1920 - 320)));
     /*padding-bottom: 140px;*/
-    padding-bottom: calc(73px + 67 * ((100vw - 320px)/(1530-320)));
+    padding-bottom: calc(73px + 67 * ((100vw - 320px) / (1920 - 320)));
 }
 .promo-left,
 .promo-right {
@@ -580,18 +580,19 @@ header {
 .promo-left {
     background-image: url(../images/promo-left.png);
     /*padding: 116px 50px;*/
-    padding-top: calc(60px + 56 * ((100vw - 320px)/(1210-320)));
-    padding-bottom: calc(60px + 56 * ((100vw - 320px)/(1210-320)));
-    padding-right: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
-    padding-left: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
+    padding-top: calc(60px + 56 * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(60px + 56 * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(30px + 20 * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(30px + 20 * ((100vw - 320px) / (1920 - 320)));
+    
 }
 .promo-right {
     background-image: url(../images/promo-right.png);
     /*padding: 102px 50px;*/
-    padding-top: calc(60px + 42 * ((100vw - 320px)/(1210-320)));
-    padding-bottom: calc(60px + 42 * ((100vw - 320px)/(1210-320)));
-    padding-right: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
-    padding-left: calc(30px + 20 * ((100vw - 320px)/(1210-320)));
+    padding-top: calc(60px + 42 * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(60px + 42 * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(30px + 20 * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(30px + 20 * ((100vw - 320px) / (1920 - 320)));
 }
 .sale {
     font-size: 14px;
@@ -687,7 +688,7 @@ header {
 
 @media (max-width: 1300px) {
     .content {
-        flex: 0 1 410px;
+        flex: 0 1 367px;
     }
 }
 @media (max-width: 1150px) {
