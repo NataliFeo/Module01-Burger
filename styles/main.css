@@ -952,6 +952,9 @@ header {
     .banner-box {
         margin-bottom: 50px;
     }
+    .banner-text {
+        width: 300px;
+    }
     .menu-header {
         gap: 20px;
     }
