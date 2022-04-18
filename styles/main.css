@@ -43,6 +43,7 @@ header {
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: 0.2s;
 }
 .header-nav a:hover {
     color: #FFC725;
@@ -111,6 +112,7 @@ header {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    transition: 0.2s;
 }
 .breadcrumbs a:hover {
     color: #FFC725;
@@ -282,6 +284,7 @@ header {
     align-items: center;
     margin: 0 auto;
     gap: 9px;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background: #F37335;
@@ -363,6 +366,7 @@ header {
     align-items: center;
     margin: 0 auto;
     gap: 9px;
+    transition: 0.2s;
 }
 .additionally-grid-btn:hover {
     background: #F37335;
@@ -440,6 +444,7 @@ header {
     font-weight: 800;
     line-height: 38px;
     color: #FBB731;
+    transition: 0.2s;
 }
 .footer-list-tel a:hover {
     color: #DEDEDE;
@@ -531,7 +536,12 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    transition: 0.2s;
 }
+.promo a {
+    transition: 0.2s;
+}
+
 .content-link:hover {
     background-color: transparent;
     color: #FBB731;
@@ -742,12 +752,13 @@ header {
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-right: -15px;
+        gap: 13px;
+        padding-right: 15px;
         margin-right: -15px;
         padding-bottom: 50px;
     }
     .additionally-grid .additionally-grid-item {
-        flex: 0 0 230px;
+        flex: 0 0 280px;
     }
     .additionally .additionally-grid-cover, .additionally .additionally-grid-cover img {
         height: 320px;
@@ -775,6 +786,9 @@ header {
     }
     .header {
         gap: 21px;
+    }
+    .additionally-grid {
+        gap: 10px;
     }
     .additionally-grid-title {
         font-size: 26px;
@@ -859,6 +873,7 @@ header {
     .banner-box {
         background-position: 17% center;
         padding: 35px 24px 54px;
+        margin-bottom: 72px;
     }
     .menu {
         margin-bottom: 46px;
@@ -868,17 +883,20 @@ header {
     }
     .menu-grid {
         gap: 35px 15px;
+        margin-bottom: 72px;
     }
     .additionally {
         height: 31rem;
-        margin-bottom: 46px;
+        margin-bottom: 72px;
     }
     .additionally .additionally-grid {
         gap: 0;
+        padding-right: 0;
     }
     .additionally-grid .additionally-grid-item {
         flex: 0 0 180px;
         padding-right: 12px;
+       
     }
     .additionally .additionally-grid-cover, .additionally .additionally-grid-cover img {
         height: 220px;
@@ -907,6 +925,9 @@ header {
 }
 
 @media (max-width: 466px) {
+    .banner-text {
+        width: 100%;
+    }
     .menu-title {
         font-size: 30px;
     }
@@ -951,9 +972,6 @@ header {
     }
     .banner-box {
         margin-bottom: 50px;
-    }
-    .banner-text {
-        width: 300px;
     }
     .menu-header {
         gap: 20px;
